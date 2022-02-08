@@ -46,9 +46,8 @@ function print() {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     const element = pixels[i];
-
-    element.addEventListener('click', function clickOn() {
-      element.style.backgroundColor = `${getColor()}`;
+    element.addEventListener('click', function y() {
+      element.style.backgroundColor = `${getColor()}`; /* Grasi ajudou aqui!! https://github.com/grasielaGomes */
     });
   }
 }
@@ -58,8 +57,7 @@ function clearButton() {
   const button = document.querySelector('#clear-board');
   const pixels = document.querySelectorAll('.pixel');
   console.log(pixels.length);
-
-  button.addEventListener('click', function clickIn() {
+  button.addEventListener('click', function x() {
     for (let i = 0; i < pixels.length; i += 1) {
       const pixel = pixels[i];
 
